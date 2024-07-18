@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metacube Parking System</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="landing_page">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Metacube.png" alt="company logo" width="200">
+        </div>
+        <div class="menu">
+            <ul class="menu-items">
+                <li class="menu-items-details"><a href="#add-employee">Add Employee</a></li>
+                <li class="menu-items-details"><a href="#add-vehicle">Add Vehicle</a></li>
+                <li class="menu-items-details"><a href="#pricing">Pricing</a></li>
+                <li class="menu-items-details"><a href="#give-feedback">Give FeedBack</a></li>
+            </ul>   
+        </div>
+    </nav>
+
+    <!-- <section>
+        <img src="Metacube_office.jpg" alt="Background Image">
+    </section> -->
+
+    <section class="add-employee">
+        <h2>Add Employee</h2>
+        <form>
+            <label for="Full-Name">Full Name</label>
+            <input type="text" name="Full-name" id="full-name" required><br><br>
+
+            <label for="gender">Gender: </label>
+            <select name="gendet" id="gender">
+                <option value="male">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+
+            <label for="email">Email Id:</label>
+            <input type="text" name="email" id="email" required><br><br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required><br><br>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+            
+            <label for="contact-number">Contact Number:</label>
+            <input type="tel" name="contact-number" id="contact-number" required><br><br>
+
+            <input type="submit" value="Add Employee">
+
+        </form>
+    </section>
+
+    <section id="add-vehicle">
+        <h2>Add Vehicle</h2>
+
+        <form>
+            <label for="vehicle-make">Vehicle Make (Company)</label>
+            <input type="text" id="vehicle-make" name="vehicle-make" required><br><br>
+
+            <label for="vehicle-model">Vehicle Model</label>
+            <input type="text" id="vehicle-model" name="vehicle-model" required><br><br>
+
+            <label for="type">Type:</label>
+            <select name="type" id="type" required>
+                <option value="">Select</option>
+                <option value="cycle">Cycle</option>
+                <option value="motorcycle">MotorCycle</option>
+                <option value="four-wheeler">Four Wheeler</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="vehicle-number">Vehicle Number</label>
+            <input type="text" id="vehicle-number" name="vehicle-number" required> <br><br>
+
+            <label for="employee-id">Employee ID:</label>
+            <input type="number" id="employee-id" name="employee-id" required><br><br>
+
+            <label for="identification">Identification:</label>
+            <textarea id="identification" name="identification" required placeholder="Color, mark, visible accessory etc."></textarea><br><br>
+
+            <input type="submit" value="Add Vehicle">
+        </form>
+    </section>
+
+    <section id="give-feedback">
+        <h2>Give FeedBack</h2>
+        <form >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required>
+            </textarea> <br><br>
+        </form>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-table">
+            <div class="pricing-column">
+                <h3>Cycle</h3>
+                <ul>
+                    <li>Daily: ₹5</li>
+                    <li>Monthly: ₹100</li>
+                    <li>Yearly: ₹500</li>
+                </ul>
+            </div>
+            <div class="pricing-column">
+                <h3>MotorCycle</h3>
+                <ul>
+                    <li>Daily: ₹10</li>
+                    <li>Monthly: ₹200</li>
+                    <li>Yearly: ₹1000</li>
+                </ul>
+            </div>
+            <div class="pricing-column">
+                <h3>Four Wheeler</h3>
+                <ul>
+                    <li>Daily: ₹20</li>
+                    <li>Monthly: ₹500</li>
+                    <li>Yearly: ₹3500</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
